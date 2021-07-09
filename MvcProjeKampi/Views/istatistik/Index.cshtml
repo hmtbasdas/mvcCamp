@@ -1,0 +1,72 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="card-group mt-3 container-fluid">
+        <div class="card bg-primary">
+            <div class="card-body">
+                <div class="text-white" style="text-align:center;">
+                    <p style="font-size:24px;">@ViewBag.toplamKategori</p>
+                </div>
+                <div class="text-white" style="text-align:center;">
+                    <p style="text-decoration:none; color:white;">Toplam Kategori Sayısı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-success ms-2">
+            <div class="card-body">
+                <div class="text-white" style="text-align:center;">
+                    <p style="font-size:24px;">@ViewBag.yazilimBaslik</p>
+                </div>
+                <div class="text-white" style="text-align:center;">
+                    <p style="text-decoration:none; color:white;">Yazılım Kategorisindeki Başlık Sayısı</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-danger ms-2">
+            <div class="card-body">
+                <div class="text-white" style="text-align:center;">
+                    <p style="font-size:24px;">@ViewBag.yazarA</p>
+                </div>
+                <div class="text-white" style="text-align:center;">
+                    <p style="text-decoration:none; color:white;">A Harfi İle Başlayan Yazar Sayısı</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card bg-warning ms-2">
+            <div class="card-body">
+                <div class="text-white" style="text-align:center;">
+                    <p style="font-size:24px;">@ViewBag.enKategoriName</p>
+                </div>
+                <div class="text-white" style="text-align:center;">
+                    <p style="text-decoration:none; color:white;">En Fazla Başlığa Sahip Kategori Adı</p>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-info ms-2">
+            <div class="card-body">
+                <div class="text-white" style="text-align:center;">
+                    <p style="font-size:24px;">@ViewBag.diffCategoryStatus</p>
+                </div>
+                <div class="text-white" style="text-align:center;">
+                    <p style="text-decoration:none; color:white;">Kategori Durum Farkı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

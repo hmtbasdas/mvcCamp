@@ -16,3 +16,5 @@ C:\Users\Hamit\source\repos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCom
 C:\Users\Hamit\source\repos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\Hamit\source\repos\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Hamit\source\repos\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Hamit\source\repos\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\Hamit\source\repos\BusinessLayer\bin\Debug\FluentValidation.xml

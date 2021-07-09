@@ -11,7 +11,7 @@ namespace DataAccessLayer.Abstract
     {
         //CRUD
         //Type Name();
-
+        Type Get(Expression<Func<Type, bool>> filter);
         List<Type> List();
         void Insert(Type item);
         void Update(Type item);
