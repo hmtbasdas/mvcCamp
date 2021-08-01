@@ -15,3 +15,15 @@ C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
 C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_job.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_image_update.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_update_status.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_content_status.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_heading_status.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_message_classs.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_update_contact.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_imageFile.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_admin_table.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_messageRead.resources
+C:\Users\Hamit\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_new_table.resources

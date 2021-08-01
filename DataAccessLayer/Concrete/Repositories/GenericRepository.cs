@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Abstract;
+﻿  using DataAccessLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -21,7 +21,9 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Delete(Type item)
         {
-            _object.Remove(item);
+            var deletedEntity = context.Entry(item);
+            deletedEntity.State = EntityState.Deleted;
+            //_object.Remove(item);
             context.SaveChanges();
         }
 
@@ -32,7 +34,9 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Insert(Type item)
         {
-            _object.Add(item);
+            var addedEntity = context.Entry(item);
+            addedEntity.State = EntityState.Added;
+            //_object.Add(item);
             context.SaveChanges();
         }
 
@@ -48,6 +52,8 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(Type item)
         {
+            var updatedEntity = context.Entry(item);
+            updatedEntity.State = EntityState.Modified;
             context.SaveChanges();
         }
     }
