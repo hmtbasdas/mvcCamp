@@ -20,12 +20,12 @@ namespace MvcProjeKampi.Controllers
         Context context = new Context();
         public ActionResult Inbox()
         {
-            var messageList = mm.GetListInbox();
+            var messageList = mm.GetListInbox(writerMail());
             return View(messageList);
         }
         public ActionResult Sendbox()
         {
-            var messageLst = mm.GetListSendBox();
+            var messageLst = mm.GetListSendBox(writerMail());
             return View(messageLst);
         }
 
@@ -41,7 +41,7 @@ namespace MvcProjeKampi.Controllers
             ValidationResult results = mv.Validate(message);
             if (results.IsValid)
             {
-                message.SenderMail = "admin@gmail.com";
+                message.SenderMail = writerMail();
                 message.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 mm.MessageAdd(message);
                 return RedirectToAction("Sendbox");
@@ -68,6 +68,11 @@ namespace MvcProjeKampi.Controllers
         {
             var values = mm.GetByID(id);
             return View(values);
+        }
+
+        public string writerMail()
+        {
+            return (string)Session["WriterMail"];
         }
     }
 }

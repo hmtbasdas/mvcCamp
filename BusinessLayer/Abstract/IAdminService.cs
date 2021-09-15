@@ -12,5 +12,11 @@ namespace BusinessLayer.Abstract
     {
         Admin Login(Context c,Admin admin);
         Admin Role(Context c, string username);
+
+        List<Admin> GetList();
+        void AdminAddBL(Admin item);
+        Admin GetByID(int id);
+        void AdminDelete(Admin admin);
+        void AdminUpdate(Admin admin);
     }
 }

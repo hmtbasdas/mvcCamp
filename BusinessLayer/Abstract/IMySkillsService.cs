@@ -10,6 +10,10 @@ namespace BusinessLayer.Abstract
 {
     interface IMySkillsService
     {
+        void AddSkill(MySkills skills);
+        void DeleteSkill(MySkills skills);
+        void UpdateSkill(MySkills skills);
+        MySkills GetByID(int id);
         List<MySkills> GetList();
     }
 }

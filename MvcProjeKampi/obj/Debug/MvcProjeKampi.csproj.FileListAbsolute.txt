@@ -92,3 +92,7 @@ C:\Users\Hamit\source\repos\MvcProjeKampi\bin\EntityFramework.SqlServer.dll
 C:\Users\Hamit\source\repos\MvcProjeKampi\bin\EntityFramework.SqlServer.xml
 C:\Users\Hamit\source\repos\MvcProjeKampi\bin\FluentValidation.dll
 C:\Users\Hamit\source\repos\MvcProjeKampi\bin\FluentValidation.xml
+C:\Users\Hamit\source\repos\MvcProjeKampi\bin\PagedList.dll
+C:\Users\Hamit\source\repos\MvcProjeKampi\bin\PagedList.Mvc.dll
+C:\Users\Hamit\source\repos\MvcProjeKampi\bin\PagedList.xml
+C:\Users\Hamit\source\repos\MvcProjeKampi\bin\PagedList.Mvc.xml

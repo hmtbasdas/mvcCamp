@@ -32,8 +32,13 @@ namespace MvcProjeKampi.Controllers
             ViewBag.contactValuesCount = cm.GetList().Count;
 
             ViewBag.messageReceiveCount = context.Messages.Where(x => x.ReadMessage == false && x.ReceiverMail == "admin@gmail.com").Count();
-            ViewBag.messageSendCount = mm.GetListSendBox().Count;
+            ViewBag.messageSendCount = mm.GetListSendBox(writerMail()).Count;
             return PartialView();
+        }
+
+        public string writerMail()
+        {
+            return (string)Session["WriterMail"];
         }
     }
 }

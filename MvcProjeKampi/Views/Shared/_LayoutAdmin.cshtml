@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="~/AdminLTE-3.0.4/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="~/AdminLTE-3.0.4/dist/css/adminlte.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
@@ -39,9 +41,8 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library -->
-                        @if (User.IsInRole("A"))
-                        {
+    with font-awesome or any other icon font library -->
+
                         <li class="nav-item has-treeview">
                             <a href="/AdminCategory/Index" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -50,12 +51,19 @@
                                 </p>
                             </a>
                         </li>
-                        }
                         <li class="nav-item">
                             <a href="/Heading/Index" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Başlıklar
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Schedule/Index" class="nav-link">
+                                <i class="nav-icon fas fa-calendar"></i>
+                                <p>
+                                    Takvim
                                 </p>
                             </a>
                         </li>
@@ -77,7 +85,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
+                                    <a href="/Chart/Index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Pie Chart</p>
                                     </a>
@@ -105,6 +113,14 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
+                            <a href="/Heading/HeadingReport" class="nav-link">
+                                <i class="nav-icon fas fa-bars"></i>
+                                <p>
+                                    Raporlar
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
                             <a href="/Contact/Index" class="nav-link">
                                 <i class="nav-icon fas fa-envelope"></i>
                                 <p>
@@ -113,7 +129,7 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                            <a href="/Content/GetAllContent" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Yazılar
@@ -129,8 +145,16 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
+                            <a href="/Skill/Index" class="nav-link">
+                                <i class="nav-icon fas fa-university"></i>
+                                <p>
+                                    Yetenek Kartı
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Gallery/Index" class="nav-link">
+                                <i class="nav-icon fas fa-image"></i>
                                 <p>
                                     Galeri
                                 </p>
@@ -145,7 +169,15 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                            <a href="/Test/SweetAlert" class="nav-link">
+                                <i class="nav-icon far fa-map"></i>
+                                <p>
+                                    Sweet Alert
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="/Home/Homepage" class="nav-link">
                                 <i class="nav-icon fas fa-cannabis"></i>
                                 <p>
                                     Siteye Git

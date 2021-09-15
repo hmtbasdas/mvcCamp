@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace MvcProjeKampi.Roles
 {
     public class AdminRoleProvider : RoleProvider
     {
-        AdminManager admin = new AdminManager();
+        AdminManager admin = new AdminManager(new EFAdminDal());
         Context c = new Context();
         public override string ApplicationName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

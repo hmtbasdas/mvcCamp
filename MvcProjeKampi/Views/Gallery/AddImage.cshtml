@@ -1,0 +1,22 @@
+﻿@using EntityLayer.Concrete
+@model MvcProjeKampi.Models.ImageViewModel
+
+@{
+    ViewBag.Title = "AddImage";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Resim Ekleme</h2>
+
+@using (Html.BeginForm("AddImage", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+{
+    @Html.TextBoxFor(x=>x.FileAttach, new 
+    {
+        type = "file",
+        placeholder = Html.DisplayNameFor(x=>x.FileAttach),
+        @class="form-control"
+    })
+
+    <input type="submit" class="btn btn-danger" value="Yükle"/>
+}
+
